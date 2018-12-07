@@ -37,7 +37,8 @@ class Body extends React.Component {
 
   addNewFruit(fruit) {
     this.setState({
-      fruits: this.state.fruits.concat(fruit)
+      // fruits: this.state.fruits.concat(fruit) //old way
+      fruits: [...this.state.fruits, fruit] //new way
     })
   }
 
